@@ -1,0 +1,32 @@
+.footer {
+    height: 96px;
+}
+
+.bg-indigo {
+    background-color: #3A005C;
+}
+
+.text-pale-purple {
+    color: #FCECFA;
+}
+
+.fab {
+    font-size: 24px;
+}
+
+.footer-copyright {
+    font-family: 'Russo One', sans-serif;
+    font-size: 16px;
+}
+
+/* no se aplica
+@media (min-width: 992px) {
+    .right-align {
+        justify-content: end;
+    }
+
+    .footer-copyright {
+        justify-content: start;
+    }
+}
+ */
