@@ -1,0 +1,36 @@
+/* Body */
+.bg-electric-purple {
+    background-color: #AF2FEB;
+}
+
+
+/* Texts */
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.russian-violet {
+    color: #2A0042;
+}
+
+/* Button */
+.btn-indigo {
+    background-color: #3A005C;
+}
+
+.btn-rounded {
+    border-radius: 24px;
+}
+
+.text-pale-purple {
+    color: #FCECFA;
+}
