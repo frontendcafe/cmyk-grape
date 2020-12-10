@@ -1,5 +1,6 @@
 .footer {
     height: 96px;
+    padding: 1rem;
 }
 
 .bg-indigo {
@@ -18,15 +19,3 @@
     font-family: 'Russo One', sans-serif;
     font-size: 16px;
 }
-
-/* no se aplica
-@media (min-width: 992px) {
-    .right-align {
-        justify-content: end;
-    }
-
-    .footer-copyright {
-        justify-content: start;
-    }
-}
- */
