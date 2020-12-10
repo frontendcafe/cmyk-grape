@@ -3,24 +3,23 @@
     background-color: #AF2FEB;
 }
 
-
 /* Texts */
-
-h1, h2 {
+.section-404 {
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+.title-404 {
     font-size: 64px;
 }
 
-h2 {
+.title-not-found {
     font-size: 32px;
 }
 
-.russian-violet {
+.text-russian-violet {
     color: #2A0042;
 }
+
 
 /* Button */
 .btn-indigo {
@@ -33,4 +32,24 @@ h2 {
 
 .text-pale-purple {
     color: #FCECFA;
+}
+
+
+@media (min-width: 992px){
+    .title-404 {
+        font-size: 96px;
+    }
+    
+    .title-not-found {
+        font-size: 80px;
+    }
+    
+    .btn-to-home:hover {
+        background-color: #FCECFA;
+        color: #3A005C;
+    }
+
+    .img-404 {
+        height: 400px;
+    }
 }
