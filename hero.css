@@ -1,17 +1,17 @@
 
 .hero-search {
-  % background: url(https://images.pexels.com/photos/1296000/pexels-photo-1296000.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  
   background: url("./assets/hero_desktop.png");
   background-attachment: fixed;
   background-size: cover;
   background-width: auto;
   background-height: auto;
-  background-position: 80%;
+  background-position: center;
   color: white;
   display: flex;
   justify-content: center;
-  padding-top:4em;
-  padding-bottom:4em;
+  padding-top:6em;
+  padding-bottom:7em;
   margin:0em;
   
 /*   height: ding: 10450px; */
@@ -23,17 +23,32 @@
   margin:0em;
   text-align: center;
 }
+
+.hero-search .holder h1{
+	font-family: "Russo One", "Serif";
+}
+.hero-search .holder p{
+	font-family: "Roboto", "Serif";
+}
 .hero-search .search {
+
   font-size: 0.9em;
 }
 .hero-search .input-group {
   
-  border-radius: 0.4em;
+  border-radius: 0.5em;
   margin:0em;
+  width: 75%;
+}
+.search{
+	border-radius: 0.5em 0em 0em 0.5em;
+	box-shadow: 0.024em 0.2em 0.2em 0 #444444;
 }
 #button-addon2{
   width:2.5em;
   height:2.25em;
+  border-radius: 0em 0.5em 0.5em 0em;
+  box-shadow: 0.2em 0.2em 0.2em 0 #444444;
 }
 
 @media only screen and (max-width:640px){
@@ -41,14 +56,20 @@
     
     background: white;
   }
-  h1{
-    color:purple;
-    opacity:1.3;
+  .hero-search .holder h1{
+	padding-top: 1.35rem;
+	padding-bottom: 1rem;
+    color: #2A0042;
+    font-size:2em;
   }
-  p{
-    color:purple;
-    opacity:0.7;
+  .hero-search .holder p{
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+    color: #2E0048;
+    font-size:1em;
+    opacity:0.8;
   }
+
   .input-group{
     margin:0.3em;
     padding:0.4em;
@@ -59,5 +80,11 @@
   .presentacion{
     display:none;
   }
-  
+  .input-group{
+    margin:0.3em;
+    padding:0.4em;
+    position: absolute;
+    top: 9.5rem;
+    
+  }
 } 
