@@ -22,7 +22,60 @@
 	  museumListRef = database.ref("museum");
 
 	  let element = document.getElementById('elem');
+	  let isChanged=false;
+	  function changeCards(){
+	  	isChanged=true;
+	  	museumListRef.on("value", function (snapshot) {
+	  		snapshot.forEach(function (childSnapshot) {
+	  			element.innerHTML ="";
+	  		});
+	  	})
+	  	museumListRef.on("value", function (snapshot) {
+	  	snapshot.forEach(function (childSnapshot) {
+	  		var data = childSnapshot.val();
+	  		//element.innerHTML = element.innerHTML+`<div>${data.name}</div>`;
+	  		var caracteristicaAbreviada= data.descripcion.substr(0,65);
+	  		let tituloCompleto=data.name;
+	  		var tituloAbreviado = data.name.substr(0,31);
+	  		var estadoDelMuseo = "CERRADO";
+	  		let datoSearcho= document.getElementById("buscador").value;
+	  		
+			let regexSearcho= RegExp(datoSearcho,"i");
+			console.log(datoSearcho);
+	  		console.log(regexSearcho.test(tituloCompleto));
+			
+	  		if(regexSearcho.test(tituloCompleto)){
+	  		if(data.name.length > 31){
+	  			tituloAbreviado = tituloAbreviado + "... Ver Mas"
+	  		}
+	  		caracteristicaAbreviada = caracteristicaAbreviada + "... Ver Mas"
+	  		element.innerHTML =element.innerHTML+ `
+		  												<div class="col-lg-4">
+                                                            <div class="card1">
+                                                                <div class="card-header">
+                                                                    <p>${estadoDelMuseo}</p>
+                                                                </div>
 
+                                                                <img src="${data.imagen}"
+                                                                    class="card-img-top" alt="mueso3">
+
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">${tituloAbreviado}</h5>
+                                                                    <p class="card-text">${caracteristicaAbreviada}</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>`
+                                                       
+													
+
+	  		console.log(data.name);
+	  		}
+	  	 });
+	  })
+	  	
+	  }
+	  
+	  if(!isChanged){
 	  museumListRef.on("value", function (snapshot) {
 	  	snapshot.forEach(function (childSnapshot) {
 	  		var data = childSnapshot.val();
@@ -75,5 +128,6 @@
 	  		console.log(data.name);
 	  	 });
 	  })
+	  }
 	  
 	  firebase.analytics();
