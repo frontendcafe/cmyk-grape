@@ -10,8 +10,8 @@
   color: white;
   display: flex;
   justify-content: center;
-  padding-top:6em;
-  padding-bottom:7em;
+  padding-top:5em;
+  padding-bottom:9em;
   margin:0em;
   
 /*   height: ding: 10450px; */
@@ -37,7 +37,7 @@
 .hero-search .input-group {
   
   border-radius: 0.5em;
-  margin:0em;
+  margin-top:2.5em;
   width: 75%;
 }
 .search{

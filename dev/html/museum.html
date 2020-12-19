@@ -67,9 +67,9 @@
 
     <section class="container hero-museum">
       <div class="input-group shadow-sm group-width hero-search my-4 mt-lg-1 mb-lg-1">
-        <input type="text" class="form-control" placeholder="Buscar museo">
+        <input type="text" class="form-control" id="buscador" onSubmit="changeCards();"placeholder="Buscar museo">
         <div class="input-group-append">
-          <button class="btn btn-light-gray" type="button">
+          <button class="btn btn-light-gray" type="button" onClick="changeCards();">
             <i class="fa fa-search"></i>
           </button>
         </div>
