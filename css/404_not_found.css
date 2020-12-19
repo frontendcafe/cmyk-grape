@@ -1,0 +1,64 @@
+/* Body */
+.bg-electric-purple {
+    background-color: #AF2FEB;
+}
+
+/* Texts */
+.section-404 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.title-404 {
+    font-size: 4rem;
+}
+
+.title-not-found {
+    font-size: 2rem;
+}
+
+.text-russian-violet {
+    color: #2A0042;
+}
+
+
+/* Button */
+.btn-indigo {
+    background-color: #3A005C;
+}
+
+.btn-width {
+    width: 160px;
+}
+
+.btn-rounded {
+    border-radius: 24px;
+}
+
+.text-pale-purple {
+    color: #FCECFA;
+}
+
+
+@media (min-width: 992px){
+
+    .title-404 {
+        font-size: 6rem;
+    }
+    
+    .title-not-found {
+        font-size: 5rem;
+    }
+    
+    .btn-width {
+        width: 170px;
+    }
+
+    .btn-hover:hover {
+        background-color: #FCECFA;
+        color: #3A005C;
+    }
+
+    .img-404 {
+        height: 400px;
+    }
+}
