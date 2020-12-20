@@ -1,8 +1,5 @@
 	  
-	  var d = new Date();
-
-
-	  //alert(d.getHours()+":"+d.getMinutes());
+	 
 	  // Your web app's Firebase configuration
 	  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 	  var firebaseConfig = {
@@ -22,62 +19,30 @@
 	  museumListRef = database.ref("museum");
 
 	  let element = document.getElementById('elem');
-	  const regex = /:/gi;
+	  let isChanged=false;
+	  
+	  
+	  if(!isChanged){
 	  museumListRef.on("value", function (snapshot) {
 	  	snapshot.forEach(function (childSnapshot) {
 	  		var data = childSnapshot.val();
-	
+	  		//element.innerHTML = element.innerHTML+`<div>${data.name}</div>`;
 	  		var caracteristicaAbreviada= data.descripcion.substr(0,65);
 	  		var tituloAbreviado = data.name.substr(0,31);
-	  		var estadoDelMuseo = "CERRADO";
-	  		//HORA ACTUAL DEL USUARIO
-	  		var horaActual= d.getHours()+":"+d.getMinutes();
-	  		horaActual = horaActual.replace(regex, '');
-	  		//HORA DE CIERRE
-			var horaCierre = data.horarioCierre;
-			var resultadoHoraCierre = horaCierre.substr(0,5);
-			resultadoHoraCierre =  resultadoHoraCierre.replace(regex, '');
-			resultadoHoraCierre = parseInt(resultadoHoraCierre,10);
-			//HORA DE APERTURA
-			var horaApertura = data.horarioApertura;
-			var resultadoHoraApertura = horaApertura.substr(0,5);
-			resultadoHoraApertura =  resultadoHoraApertura.replace(regex, '');
-			resultadoHoraApertura = parseInt(resultadoHoraApertura,10);
-
-	  		if( horaActual > resultadoHoraApertura && horaActual < resultadoHoraCierre){
-	  			estadoDelMuseo = "ABIERTO";
-
-	  		}else{
-	  			estadoDelMuseo = "CERRADO";
-	  		}
+	  		var estadoDelMuseo = estadoMuseoActual(data);
 	  		
-
 	  		
-	  		if(data.name.length > 31){
-	  			tituloAbreviado = tituloAbreviado + "... Ver Mas"
+	  		let museoExtras={
+	  			_tituloAbreviado: tituloAbreviado,
+	  			_caracteristicaAbreviada: caracteristicaAbreviada,
+	  			_estadoDelMuseo: estadoDelMuseo,
 	  		}
-	  		caracteristicaAbreviada = caracteristicaAbreviada
-	  		element.innerHTML =element.innerHTML+ `
-		  												<div class="col-lg-4" id="carta">
-                                                            <div class="card1">
-                                                                <div class="card-header">
-                                                                    <p>${estadoDelMuseo}</p>
-                                                                </div>
-                                                                <a href="museum.html?id=${data.id}">
-                                                                <img src="${data.imagen}"
-                                                                    class="card-img-top" alt="imagen del museo">
-                                                                </a>
-                                                                <div class="card-body">
-                                                                    <h5 class="card-title">${data.name}</h5>
-                                                                    <p class="card-text">${caracteristicaAbreviada} <a href="public/views/museum.html?id=${data.id}">... Ver mas</a></p>
-                                                                </div>
-                                                            </div>
-                                                        </div>`
-                                                       
-													
 
-	  		console.log(data.name);
+			creaCard(data,museoExtras,'elem');
+
 	  	 });
 	  })
+	  }
 	  
 	  firebase.analytics();
+	  
