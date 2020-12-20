@@ -1,49 +1,33 @@
-
-.hero-search {
-  
+.hero-search {  
   background: url("../assets/hero_desktop.png");
   background-attachment: fixed;
   background-size: cover;
-  background-width: auto;
-  background-height: auto;
   background-position: center;
-  color: white;
+  background-color: teal;
   display: flex;
-  justify-content: center;
-  padding-top:5em;
-  padding-bottom:9em;
-  margin:0em;
-  
-/*   height: ding: 10450px; */
-  align-items: center;
-}
-.hero-search .holder {
-  width: 80%;
-  height: 20%;
-  margin:0em;
-  text-align: center;
+  justify-content: center; 
+  height: 250px;
+  padding-top: 3em;
+  padding-bottom: 2em;
 }
 
-.hero-search .holder h1{
-	font-family: "Russo One", "Serif";
+.hero-search h1 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.4em; 
+  color: #FFFFFF;
 }
-.hero-search .holder p{
-	font-family: "Roboto", "Serif";
-}
-.hero-search .search {
 
-  font-size: 0.9em;
-}
 .hero-search .input-group {
-  
   border-radius: 0.5em;
-  margin-top:2.5em;
-  width: 75%;
+  width: 70%;
 }
+
 .search{
+  font-size: 0.9em;
 	border-radius: 0.5em 0em 0em 0.5em;
 	box-shadow: 0.024em 0.2em 0.2em 0 #444444;
 }
+
 #button-addon2{
   width:2.5em;
   height:2.25em;
@@ -51,40 +35,87 @@
   box-shadow: 0.2em 0.2em 0.2em 0 #444444;
 }
 
-@media only screen and (max-width:640px){
-  .hero-search{
-    
-    background: white;
-  }
-  .hero-search .holder h1{
-	padding-top: 1.35rem;
-	padding-bottom: 1rem;
-    color: #2A0042;
-    font-size:2em;
-  }
-  .hero-search .holder p{
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-    color: #2E0048;
-    font-size:1em;
-    opacity:0.8;
-  }
 
-  .input-group{
-    margin:0.3em;
-    padding:0.4em;
-  }
+@media only screen and (min-width: 768px) {
+  .hero-search .input-group {
+    width: 60%;
+  }  
+
 }
 
-@media only screen and (min-width: 640px){
-  .presentacion{
-    display:none;
+@media only screen and (min-width: 992px) {
+    .hero-search {
+      height: 500px;
+      padding-left: 400px;
+      padding-right: 400px;
+    }
+
+    .hero-search h1 {
+      font-size: 4em;
+      font-weight: bolder;
+      margin-top: 4rem;
+    }
+
+    .hero-search .input-group {
+      width: 50%;
+    }  
+  
+}
+/* 
+@media only screen and (max-width:640px){
+  .hero-search {
+    height: 250px;
   }
+  
+  .hero-search .holder h1{
+	  padding-top: .15em;
+	  padding-bottom: 1rem;
+    font-size: 1.50em; 
+    
+  }
+  .hero-search .input-group {
+    margin: 3em;
+  }
+  .presentacion {
+    color: #2A0042 !important;
+  }
+}  */
+/* 
+@media only screen and (min-width: 768px){ /* ok 
+  .hero-search {
+    height: 250px;
+    width: auto;
+    background-attachment: inherit;
+    background-position: top center; 
+  }
+
   .input-group{
     margin:0.3em;
     padding:0.4em;
     position: absolute;
-    top: 9.5rem;
-    
+    top: 2.5rem;
+    left: -3em;
   }
-} 
+
+  .hero-search .holder h1{
+    font-family: 'El Messiri', sans-serif;
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 3em;
+  }
+  .presentacion{
+    display:none;
+  }
+  
+}  
+
+
+
+
+/* desktop MQ
+  position: absolute;
+  top: 1em;
+  left: 14em; */
+
+

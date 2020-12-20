@@ -1,4 +1,162 @@
-.img-art {
-    height: 150px;
-    background-color: #FF4B40;
+.museum-description,
+.activities, 
+.information {
+    height: auto;
+}
+
+.hero-search {
+    background-image: none;
+    height: 100px;
+}
+
+.hero-search h1 {
+    display: none;
+}
+
+/* Museum description 
+---------------------------------------------------------------------------*/
+.title-museum {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.2rem; 
+}
+
+.text-museum {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.text-russian-violet {
+    color: #32074b;
+}
+
+.text-dark-violet {
+    color: #161216;
+}
+
+.img-museum {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+
+/* Activities 
+----------------------------------------------------------------------------*/
+.activities {
+    background-color: #b41ce2;
+}
+
+.title-activities {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.4rem;
+    color: #FFF;
+}
+
+.subtitle-activities {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1rem;
+    color: #FFF;
+    border-bottom: 0.5px solid #f0efeb;
+    padding-bottom: 5px;
+}
+
+.text-activities {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #FFF;
+}
+
+.img-expo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    height: 280px;
+    width: 280px;
+}
+
+/* Information 
+------------------------------------------------------------------------*/
+.information {
+    background-color: #FFF;
+}
+
+.title-information {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.3rem;
+}
+
+.information-item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.title-arrive {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.3rem;
+}
+
+
+iframe {
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+@media (min-width: 768px) { 
+    /* sections */
+    
+
+    .title-museum{
+        font-size: 2.5rem;
+        font-weight: bolder;
+    }
+
+    .title-activities {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    /* titles */
+    
+    .title-information,
+    .title-arrive {
+        font-size: 2rem;
+    }
+
+    .title-activities {
+        margin-bottom: 65px;
+    }
+
+    .subtitle-activities {
+        font-size: 2rem;
+        border-bottom: none;
+    }
+
+    .text-museum,
+    .text-activities,
+    .information-item {
+        font-size: 1rem;
+    }
+
+    .information-item {
+        margin-bottom: 3rem;
+    }
+
+    .text-arrive {
+        display: none;
+    }
+
+    .img-expo {
+        height: 450px;
+        width: 450px;
+    }
+
+    iframe {
+        width: 600px;
+    }
 }

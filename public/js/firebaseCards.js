@@ -65,7 +65,7 @@
                                                                 </div>
                                                                 <a href="museum.html?id=${data.id}">
                                                                 <img src="${data.imagen}"
-                                                                    class="card-img-top" alt="mueso3">
+                                                                    class="card-img-top" alt="imagen del museo">
                                                                 </a>
                                                                 <div class="card-body">
                                                                     <h5 class="card-title">${data.name}</h5>
