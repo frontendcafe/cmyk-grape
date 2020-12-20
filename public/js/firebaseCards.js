@@ -37,7 +37,9 @@
 	  			_caracteristicaAbreviada: caracteristicaAbreviada,
 	  			_estadoDelMuseo: estadoDelMuseo,
 	  		}
+
 			creaCard(data,museoExtras,'elem');
+
 	  	 });
 	  })
 	  }

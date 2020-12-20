@@ -1,11 +1,13 @@
-/* Body */
+/* Body 
+----------------------------------------------------------------------------*/
 .bg-electric-purple {
     background-color: #AF2FEB;
 }
 
-/* Texts */
+/* Texts
+----------------------------------------------------------------------------*/
 .section-404 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .title-404 {
@@ -16,18 +18,22 @@
     font-size: 2rem;
 }
 
+.text-description-404 {
+    font-size: 2rem;
+}
+
 .text-russian-violet {
     color: #2A0042;
 }
 
-
-/* Button */
+/* Button 
+----------------------------------------------------------------------------*/
 .btn-indigo {
     background-color: #3A005C;
 }
 
 .btn-width {
-    width: 160px;
+    width: 200px;
 }
 
 .btn-rounded {
@@ -38,6 +44,29 @@
     color: #FCECFA;
 }
 
+.link404 {
+    text-decoration: none;
+}
+
+/* Media queries
+----------------------------------------------------------------------------*/
+@media (min-width: 768px){
+    .title-404 {
+        font-size: 5rem;
+    }
+    
+    .title-not-found {
+        font-size: 3rem;
+    }
+
+    .text-description-404 {
+        font-size: 2.7rem;
+    }
+
+    .btn-width {
+        width: 240px;
+    }
+}    
 
 @media (min-width: 992px){
 
@@ -50,7 +79,7 @@
     }
     
     .btn-width {
-        width: 170px;
+        width: 260px;
     }
 
     .btn-hover:hover {

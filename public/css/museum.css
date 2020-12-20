@@ -1,4 +1,187 @@
-.img-art {
-    height: 150px;
-    background-color: #FF4B40;
+.museum-description,
+.activities, 
+.information {
+    height: auto;
+}
+
+/* Hero
+---------------------------------------------------------------------------*/
+.hero-search {
+    background-image: none;
+    height: 70px;
+    padding-top: 1em;
+    background-color: rgb(59, 7, 85); 
+}
+
+.hero-search h1 {
+    display: none;
+}
+
+.search {
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+/* Museum description 
+---------------------------------------------------------------------------*/
+.title-museum {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.text-museum {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.text-russian-violet {
+    color: #32074b;
+}
+
+.text-dark-violet {
+    color: #161216;
+}
+
+.img-museum {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    border-style: ridge;
+}
+
+/* Activities 
+----------------------------------------------------------------------------*/
+.activities {
+    background-color: #b41ce2;
+}
+
+.title-activities {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    color: #FFF;
+    margin-left: -.5em;
+}
+
+.subtitle-activities {
+    font-family: 'Russo One', sans-serif;
+    font-size: 1rem;
+    color: #FFF;
+    border-bottom: 0.5px solid #f0efeb;
+    padding-bottom: 5px;
+}
+
+.text-activities {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #FFF;
+}
+
+.img-expo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    height: 280px;
+    width: 280px;
+    border-style: ridge;
+}
+
+/* Information 
+------------------------------------------------------------------------*/
+.information {
+    background-color: #FFF;
+}
+
+.title-information {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.3rem;
+}
+
+.information-item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.title-arrive {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.3rem;
+}
+
+
+iframe {
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+@media (min-width: 768px) { 
+    .activities {
+        padding: 3em;
+    }
+
+    .hero-search {
+        height: 90px;
+        padding-top: 1.5em;
+    }
+
+    .hero-search .input-group {
+        width: 60%;
+    }
+
+    .title-museum{
+        font-size: 2.5rem;
+        font-weight: bolder;
+    }
+
+    .title-activities {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    
+    .title-information,
+    .title-arrive {
+        font-size: 2rem;
+    }
+
+    .subtitle-activities {
+        font-size: 2rem;
+        border-bottom: none;
+    }
+
+    .text-museum,
+    .text-activities,
+    .information-item {
+        font-size: 1.5rem;
+    }
+
+    .text-arrive {
+        display: none;
+    }
+
+    .information-item {
+        margin-bottom: 3rem;
+    }
+
+    .img-expo {
+        height: 450px;
+        width: 450px;
+    }
+
+    iframe {
+        width: 600px;
+    }
+}
+
+@media (min-width: 992px) { 
+    .hero-search {
+        height: 100px;
+        padding-top: 1.4em;
+    }
+
 }

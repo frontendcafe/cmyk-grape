@@ -32,27 +32,23 @@
 	  			tituloAbreviado = tituloAbreviado + "... Ver Mas"
 	  		}
 	  		caracteristicaAbreviada = caracteristicaAbreviada + "... Ver Mas"
-	  		element.innerHTML =element.innerHTML+ `<div class="list-group" id="activity">
-				  <div class="list-group-item list-group-item-action">
-				  	<img src="${data.imgExposicionTransitoria}" class="logoActivity" alt="mueso3">
-				  	<div class="containerTitle">
+			  element.innerHTML =element.innerHTML+ `<div class="list-group container-list" id="activity">
+			  
+				  <div class="list-group-item list-group-item-action m-auto row d-lg-flex">
+				  	<div class= "col-lg-5">
+					  <img src="${data.imgExposicionTransitoria}" class="img-activity img-fluid " alt="muestra transitoria">
+					</div>
+
+				  	<div class="containerText col-lg-7 pt-lg-5">
 				  		<p class="titleActivity">${data.exposicionTransitoria}</p>
-				  		<div class="museumName">
-				  			<p class="museumNameText">${data.name}</p>
-				  		</div>
-				  		<div class="location">
-				  			<img class="imgLocation" src="assets/placeholder.svg">
-				  			<p class="location">${data.direccion}</p>
-				  		</div>
-				  		
+				  		<p class="museumNameText">${data.name}</p>
+				  		<img class="iconLocation" src="../assets/placeholder.svg">
+						<p class="location">${data.direccion}</p>
+						<button class="btn-accessMuseum text-uppercase">Ir al museo</button>
 				  	</div>
-				  	<div>
-				  		<button class="accessMuseum">IR AL MUSEO</button>
-				  	</div>
-				  </div>
+				
+				  	</div>  
 				</div>`
-                                                       
-													
 
 	  		console.log(data.name);
 	  	 });

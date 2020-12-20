@@ -7,14 +7,28 @@
 }
 
 .title-preloader {
-    font-family: 'Alatsi', sans-serif;
-    font-size: 72px; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 72px;
+    font-weight: bolder;
 }
 
 .text-pale-purple {
-    color: #FCECFA;
+    color: #f0efeb;
 }
 
 .img-logo {
     height: 200px;
+}
+
+
+@media (min-width: 768px){
+    .container {
+        margin-top: 20rem;
+    }
+}
+
+@media (min-width: 768px){
+    .container {
+        margin-top: 10rem;
+    }
 }
