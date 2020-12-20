@@ -6,18 +6,26 @@
 
 .hero-search {
     background-image: none;
-    height: 100px;
+    height: 70px;
+    padding-top: 1em;
+    background-color: rgb(59, 7, 85); 
 }
 
 .hero-search h1 {
     display: none;
 }
 
+.search {
+    margin-left: auto;
+    margin-right: auto; 
+}
+
 /* Museum description 
 ---------------------------------------------------------------------------*/
 .title-museum {
-    font-family: 'El Messiri', sans-serif;
-    font-size: 1.2rem; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .text-museum {
@@ -38,6 +46,7 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
+    border-style: ridge;
 }
 
 /* Activities 
@@ -47,13 +56,14 @@
 }
 
 .title-activities {
-    font-family: 'El Messiri', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.4rem;
     color: #FFF;
+    margin-left: -.5em;
 }
 
 .subtitle-activities {
-    font-family: 'El Messiri', sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-size: 1rem;
     color: #FFF;
     border-bottom: 0.5px solid #f0efeb;
@@ -73,6 +83,7 @@
     border-radius: 8px;
     height: 280px;
     width: 280px;
+    border-style: ridge;
 }
 
 /* Information 
@@ -109,7 +120,20 @@ iframe {
 
 @media (min-width: 768px) { 
     /* sections */
+    .activities {
+        padding: 3em;
+    }
+
+    .hero-search {
+        height: 90px;
+        padding-top: 1.5em;
+    }
+
     
+  .hero-search .input-group {
+    width: 60%;
+  }
+
 
     .title-museum{
         font-size: 2.5rem;
@@ -128,10 +152,6 @@ iframe {
         font-size: 2rem;
     }
 
-    .title-activities {
-        margin-bottom: 65px;
-    }
-
     .subtitle-activities {
         font-size: 2rem;
         border-bottom: none;
@@ -140,7 +160,7 @@ iframe {
     .text-museum,
     .text-activities,
     .information-item {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .information-item {
@@ -159,4 +179,12 @@ iframe {
     iframe {
         width: 600px;
     }
+}
+
+@media (min-width: 992px) { 
+    .hero-search {
+        height: 100px;
+        padding-top: 1.4em;
+    }
+
 }

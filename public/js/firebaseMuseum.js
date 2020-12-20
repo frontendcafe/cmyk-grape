@@ -35,7 +35,7 @@
 			  <section class="container museum-description mt-5">
 				<div class="row">
 				  <div class="col-md-12 col=lg-12 mb-lg-5">
-					<h1 class="title-museum text-uppercase text-center text-russian-violet font-weight-bold mb-5">${data.name}</h1>
+					<h1 class="title-museum text-uppercase text-center text-russian-violet mb-5">${data.name}</h1>
 				  </div>
 		  
 				  <div class="col-md-12 col-lg-6">
@@ -49,19 +49,19 @@
 			  </section>
 			
 			  <!-- Activities -->  
-			  <section class="container-fluid activities mt-5 pt-4 pb-5 p-lg-5">
+			  <section class="container-fluid activities mt-5 pt-2 pb-5 p-lg-5">
 				<div class="col-md-12 col-lg-12">
 				  <h2 class="title-activities text-uppercase text-left text-russian-violet font-weight-bold pt-5">Actividades</h2>
 				</div>
 		  
 				<div class="row d-lg-flex justify-content-lg-between">
-				  <div class="col-md-12 col-lg-6 pb-lg-5">
+				  <div class="col-md-12 col-lg-6 pb-lg-5 mt-4">
 					<h3 class="subtitle-activities text-uppercase text-russian-violet font-weight-bold mt-5 mb-4">Exposición fija</h3>
 					<p class="text-activities text-russian-violet mb-4">${data.exposicionFijas}</p>
 					<img class="img-fluid img-expo mb-3" src="${data.imgExposicionFijas}">
 				  </div>
 		  
-				  <div class="col-md-12 col-lg-6 pb-lg-5">
+				  <div class="col-md-12 col-lg-6 pb-lg-5 mt-4">
 					<h3 class="subtitle-activities text-uppercase text-russian-violet font-weight-bold mt-5 mb-4">En el mes de Diciembre</h3>
 					<p class="text-activities text-russian-violet mb-4">${data.exposicionTransitoria}</p>
 					<img class="img-fluid img-expo mb-3" src="${data.imgExposicionTransitoria}">
