@@ -69,7 +69,7 @@
                                                                 </a>
                                                                 <div class="card-body">
                                                                     <h5 class="card-title">${data.name}</h5>
-                                                                    <p class="card-text">${caracteristicaAbreviada} <a href="museum.html?id=${data.id}">... Ver mas</a></p>
+                                                                    <p class="card-text">${caracteristicaAbreviada} <a href="public/views/museum.html?id=${data.id}">... Ver mas</a></p>
                                                                 </div>
                                                             </div>
                                                         </div>`
