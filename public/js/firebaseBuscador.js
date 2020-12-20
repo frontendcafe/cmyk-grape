@@ -22,9 +22,9 @@
 	  		
 			let regexSearcho= RegExp(datoSearcho,"i");
 			console.log(datoSearcho);
-	  		console.log(regexSearcho.test(tituloCompleto));
+	  		console.log(regexSearcho.test(data.name));
 			
-	  		if(regexSearcho.test(tituloCompleto)){
+	  		if(regexSearcho.test(data.name)){
 	  			let museoExtras={
 	  				_tituloAbreviado: tituloAbreviado,
 	  				_caracteristicaAbreviada: caracteristicaAbreviada,
