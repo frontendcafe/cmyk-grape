@@ -1,4 +1,4 @@
-<img src="assets/logo.svg" align="right" height=80px />
+<img src="./public/assets/logo.svg" align="right" height=80px />
 # Proyecto CMYK++ - Grape
 
 
