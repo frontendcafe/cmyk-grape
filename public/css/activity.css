@@ -1,0 +1,43 @@
+.logoActivity{
+			width: 10%;
+			float: left;
+		}
+		.y{
+		}
+		.accessMuseum{
+			background-color: #962BEF;
+			border: none;
+			border-radius: 5px;
+			padding: 0.7%;
+			margin-top: 6%;
+			float: right;
+			color: white;
+			font-weight: bold;
+			font-size: 0.9rem;
+
+		}
+
+		.museumNameText{
+			margin: 0% 0% 3% 0%;
+			color: #A846FA;
+			font-size: 0.9rem;
+		}
+		.location{
+			float: left;
+			color: #FA6767;
+			font-size: 0.7rem;
+		}
+		.imgLocation{
+			float: left;
+			width: 5%;
+		}
+		.containerTitle{
+			float: left;
+			margin-left: 5%;
+		}
+		.titleActivity{
+			margin: 0px 0px 0px 0px;
+			color: #6610f2;	
+			font-size: 1rem;
+			font-weight: bold;
+		}
