@@ -7,6 +7,8 @@
   display: flex;
   justify-content: center; 
   height: 250px;
+  width: 100%;
+  margin: 0;
   padding-top: 3em;
   padding-bottom: 2em;
 }
@@ -37,17 +39,37 @@
 
 
 @media only screen and (min-width: 768px) {
+
+  .hero-search {
+    height: 330px;
+  }
+
+  .hero-search h1 {
+    font-size: 2em;
+    margin-top: 2.5rem;
+  }
+
   .hero-search .input-group {
     width: 60%;
-  }  
+  }
+
+  .search {
+    height: 40px;
+  }
+
+  #button-addon2{
+    width: 2.7em;
+    height: 2.5em;
+  }
 
 }
 
 @media only screen and (min-width: 992px) {
+
     .hero-search {
       height: 500px;
       padding-left: 400px;
-      padding-right: 400px;
+      padding-right: 400px; 
     }
 
     .hero-search h1 {
@@ -56,11 +78,17 @@
       margin-top: 4rem;
     }
 
-    .hero-search .input-group {
-      width: 50%;
-    }  
+    .search {
+      height: 50px;
+    }
   
+    #button-addon2{
+      width: 3em;
+      height: 3.2em;
+    }  
+    
 }
+
 /* 
 @media only screen and (max-width:640px){
   .hero-search {
