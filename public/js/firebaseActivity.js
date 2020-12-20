@@ -34,12 +34,12 @@
 	  		caracteristicaAbreviada = caracteristicaAbreviada + "... Ver Mas"
 			  element.innerHTML =element.innerHTML+ `<div class="list-group container-list" id="activity">
 			  
-				  <div class="list-group-item list-group-item-action row">
-				  	<div class= "col-md-6">
-					  <img src="${data.imgExposicionTransitoria}" class="img-activity img-fluid " alt="museo">
+				  <div class="list-group-item list-group-item-action m-auto row d-lg-flex">
+				  	<div class= "col-lg-5">
+					  <img src="${data.imgExposicionTransitoria}" class="img-activity img-fluid " alt="muestra transitoria">
 					</div>
 
-				  	<div class="containerTitle col-md-6">
+				  	<div class="containerText col-lg-7 pt-lg-5">
 				  		<p class="titleActivity">${data.exposicionTransitoria}</p>
 				  		<p class="museumNameText">${data.name}</p>
 				  		<img class="iconLocation" src="../assets/placeholder.svg">

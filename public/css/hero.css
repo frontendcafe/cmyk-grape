@@ -16,7 +16,7 @@
 .hero-search h1 {
   font-family: 'Russo One', sans-serif;
   font-size: 1.4em; 
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 .hero-search .input-group {
@@ -39,7 +39,6 @@
 
 
 @media only screen and (min-width: 768px) {
-
   .hero-search {
     height: 330px;
   }
@@ -65,7 +64,6 @@
 }
 
 @media only screen and (min-width: 992px) {
-
     .hero-search {
       height: 500px;
       padding-left: 400px;
@@ -85,65 +83,5 @@
     #button-addon2{
       width: 3em;
       height: 3.2em;
-    }  
-    
+    }
 }
-
-/* 
-@media only screen and (max-width:640px){
-  .hero-search {
-    height: 250px;
-  }
-  
-  .hero-search .holder h1{
-	  padding-top: .15em;
-	  padding-bottom: 1rem;
-    font-size: 1.50em; 
-    
-  }
-  .hero-search .input-group {
-    margin: 3em;
-  }
-  .presentacion {
-    color: #2A0042 !important;
-  }
-}  */
-/* 
-@media only screen and (min-width: 768px){ /* ok 
-  .hero-search {
-    height: 250px;
-    width: auto;
-    background-attachment: inherit;
-    background-position: top center; 
-  }
-
-  .input-group{
-    margin:0.3em;
-    padding:0.4em;
-    position: absolute;
-    top: 2.5rem;
-    left: -3em;
-  }
-
-  .hero-search .holder h1{
-    font-family: 'El Messiri', sans-serif;
-    position: absolute;
-    color: white;
-    top: 0;
-    left: 3em;
-  }
-  .presentacion{
-    display:none;
-  }
-  
-}  
-
-
-
-
-/* desktop MQ
-  position: absolute;
-  top: 1em;
-  left: 14em; */
-
-

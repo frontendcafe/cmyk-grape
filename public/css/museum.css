@@ -4,6 +4,8 @@
     height: auto;
 }
 
+/* Hero
+---------------------------------------------------------------------------*/
 .hero-search {
     background-image: none;
     height: 70px;
@@ -119,7 +121,6 @@ iframe {
 
 
 @media (min-width: 768px) { 
-    /* sections */
     .activities {
         padding: 3em;
     }
@@ -129,11 +130,9 @@ iframe {
         padding-top: 1.5em;
     }
 
-    
-  .hero-search .input-group {
-    width: 60%;
-  }
-
+    .hero-search .input-group {
+        width: 60%;
+    }
 
     .title-museum{
         font-size: 2.5rem;
@@ -144,8 +143,6 @@ iframe {
         font-size: 3rem;
         font-weight: bold;
     }
-
-    /* titles */
     
     .title-information,
     .title-arrive {
@@ -163,12 +160,12 @@ iframe {
         font-size: 1.5rem;
     }
 
-    .information-item {
-        margin-bottom: 3rem;
-    }
-
     .text-arrive {
         display: none;
+    }
+
+    .information-item {
+        margin-bottom: 3rem;
     }
 
     .img-expo {

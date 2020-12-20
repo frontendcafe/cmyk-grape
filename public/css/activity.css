@@ -1,40 +1,63 @@
-.container-activity {
-	padding: 3em 1em 3em 1em;
+body {
+	background-color: rgb(168, 17, 182);
 }
 
+.container-activity {
+	padding: .5em 3em 3em 3em;
+}
+
+.title-page-activity {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #FFF;
+}
+
+.container-list {
+	margin: 3em 1em 3em 1em;
+}
+
+.list-group-item {
+	margin: 3em;
+}
 
 .img-activity {
 	height: 250px;
 	width: 250px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
 }
 
-
-
 .titleActivity {
-	margin: 0px 0px 0px 0px;
+	font-family: 'Montserrat', sans-serif;
 	color: #6610f2;
 	font-size: 1rem;
 	font-weight: bold;
 }
 
 .museumNameText {
-	margin: 0% 0% 3% 0%;
-	color: #A846FA;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 0.9rem;
 }
 
 .iconLocation {
 	float: left;
-	width: 5%;
+	width: 6%;
+	margin-right: .3em;
 }
 
+
+.containerText {
+	padding: .5em 2em 3em 2em;
+}
 
 .location {
 	float: left;
 	color: #FA6767;
 	font-size: 0.7rem;
 }
-
 
 .btn-accessMuseum {
 	background-color: #962BEF;
@@ -50,7 +73,61 @@
 
 @media (min-width: 768px) { 
 	.img-activity {
-		height: 450px;
-		width: 450px;
+		height: 500px;
+		width: 500px;
+	}
+
+	.container-list {
+		margin: 3em 4em 3em 4em;
+	}
+
+	.containerText {
+		padding: .5em 3em 3em 3em;
+	}
+
+	.title-page-activity {
+		font-size: 2rem;
+	}
+	
+	.titleActivity {
+		font-size: 1.3rem;
+	}
+
+	.museumNameText {
+		font-size: 1rem;
+	}
+
+	.location {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 992px) { 
+	.title-page-activity {
+		font-size: 2rem;
+	}
+	
+	.titleActivity {
+		font-size: 1.7rem;
+	}
+
+	.museumNameText {
+		font-size: 1.5rem;
+	}
+
+	.location {
+		font-size: 1.4rem;
+	}
+
+	.iconLocation {
+		height: 30px;
+	}
+
+	.img-activity {
+		margin-left: 0;
+	}
+
+	.container-list {
+		width: 80%;
 	}
 }

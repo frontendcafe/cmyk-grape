@@ -17,14 +17,28 @@
   <!-- Icons -->
   <script src="https://kit.fontawesome.com/3620d7f712.js" crossorigin="anonymous"></script>
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap" rel="stylesheet">
+  
+  <!-- Icon & screen -->
+  <link rel="shortcut icon"sizes="196x196" href="/public/assets/logo.svg">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
   <title>Actividades</title>
 </head>
+
 <body>
 
- 
   <header>
     <!-- navbar -->
- 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand text-uppercase" href="/index.html"><img class="img-fluid mr-2" src="/public/assets/logo.svg" alt="logo majac">Majac</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -50,8 +64,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">English</a>
-                <a class="dropdown-item" href="#">Portugues</a>
-               
+                <a class="dropdown-item" href="#">Portugues</a>   
               </div>
             </li>
             <li class="nav-item">
@@ -60,33 +73,32 @@
           </ul>
 
       </nav>
-    </div>
   </header>
 
-	<div class="container-activity"></div>
-    <h1>Actividades transitorias</h1>
-	
-			<div id="activityOfMuseum">
-				
-			</div>
-	
-	</div>
+  <main>
+    <div class="container-activity"></div>
+      <h1 class="title-page-activity text-center">Actividades transitorias</h1>
+      <div id="activityOfMuseum"></div>	
+    </div>
+  
+</main>
 
 	<footer class=" container-fluid d-flex flex-column footer bg-light-gray pt-4">
-          <!-- social buttons -->
-          <div class="d-flex justify-content-center">
-            <ul class="list-unstyled list-inline">
-              <li class="list-inline-item text-dark-violet"><i class="fab fa-facebook fa-lg"></i></li>
-              <li class="list-inline-item text-dark-violet"><i class="fab fa-twitter fa-lg"></i></li>
-              <li class="list-inline-item text-dark-violet"><i class="fab fa-instagram fa-lg"></i></li>
-            </ul>
-          </div>
-      
-          <!-- copyright -->
-          <div class="text-center footer-copyright text-dark-violet text-uppercase">
-            <small>© majac 2020</small>
-          </div>
-      </footer>
+      <!-- social buttons -->
+      <div class="d-flex justify-content-center">
+        <ul class="list-unstyled list-inline">
+          <li class="list-inline-item text-dark-violet"><i class="fab fa-facebook fa-lg"></i></li>
+          <li class="list-inline-item text-dark-violet"><i class="fab fa-twitter fa-lg"></i></li>
+          <li class="list-inline-item text-dark-violet"><i class="fab fa-instagram fa-lg"></i></li>
+        </ul>
+      </div>
+  
+      <!-- copyright -->
+      <div class="text-center footer-copyright text-dark-violet text-uppercase">
+        <small>© majac 2020</small>
+      </div>
+  </footer>
+
 
   <!-- jQuery, Popper.js, and Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -99,6 +111,7 @@
     integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
   </script>
   
+  <!-- Scripts -->
   <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
     
