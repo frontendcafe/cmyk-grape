@@ -1,0 +1,179 @@
+body{
+    font-family:'Alatsi', sans-serif;
+	color: #f5f5f5;
+	background-image: url('../grape9.jpg');
+	background-attachment: fixed;
+  background-size: cover;
+}
+
+h1{
+	text-align: center;
+	margin-top: 2em;
+	margin-left: .5em;
+}
+
+.img-museo{
+	position: absolute;
+}
+
+.form-box {
+	margin-left: 1.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2.5em;
+	color: #f5f5f5;
+
+		.form-box__form{
+			padding: 1em;
+			border-radius: 8%;
+			padding: .5em;
+
+			.form-box__form--inputbox{
+				border: 1;
+				border-radius: .5rem;
+				margin-left: 1em;
+			}
+			.form-box__form--center{
+				margin-top: 1.5em;
+				margin-bottom: 1.5em;
+
+				.margin-inputbox{
+					margin-left: 1.55em;
+				}
+			}
+		}
+		.form-group{
+
+			textarea{
+				// width: 150%;
+				// height: 150%;
+				border-radius: 8%;
+				padding: .5em;
+			}
+			
+		}
+		
+		.form-box__buttom {
+			
+			margin-left: 9.75em;
+			
+			.form-box__buttom--buttom{
+			background-color: #570a50;
+			border: #b326b8 1px solid;
+			color: #f5f5f5;
+			padding: .5em 1em;
+			// margin: .2em;
+			border-radius: 1.5em;
+			}
+		}
+}
+@media only screen and (max-width: 390px){
+
+	.form-box{
+
+		label{
+			font-size: .9em;
+		}
+		.form-box__textarea{
+			padding: .25em 0em;
+			margin: .25em;
+		}
+		.textarea_size{
+			width: 17em;
+			height: 10em;
+		}
+		.form-box__newsletter{
+			font-size: 1em;
+		}
+
+		.form-box__buttom {
+
+			margin-left: 12em;
+			
+		}
+	}
+	
+}
+
+@media only screen and (max-width: 450px){
+
+	
+	.form-box__buttom {
+
+		margin-left: 12em;
+		
+	}
+		
+
+}
+
+@media only screen and (min-width: 768px){
+	
+
+	h1{
+		margin-top: 4em;
+	}
+	.form-box{
+		align-items: center;
+	}
+}
+
+@media only screen and (min-width: 992px){
+
+}
+
+@media only screen and (min-width: 1024px){
+
+	.img-museo{
+		background: url(../contacto.png);
+		background-position:40% 50%;
+		background-size: cover;
+		top: 0;
+		width: 50%;
+		height:800px;
+		z-index: -1;
+	}
+
+	h1{
+		margin-left: 13em;
+		margin-top: 4em;
+	}
+
+	.form-box{
+		margin-left: 33em;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+
+	h1{
+		margin-left: 15.5em;
+		margin-top: 4em;
+	}
+
+	.form-box{
+		margin-left: 38em;
+	}
+
+}
+
+@media only screen and (min-width:1400px){
+
+	.img-museo{
+		background-position: 100%;
+		height: 900px;
+	}
+
+	h1{
+		margin-left: 18em;
+		margin-top: 4em;
+	}
+
+	.form-box{
+		margin-left: 45em;
+	}
+
+}
+
+
