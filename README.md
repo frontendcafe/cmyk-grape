@@ -2,8 +2,8 @@
 
 
 
-<!--> Repositorio iniciado para comenzar/seguir el aprendizaje de un desarrollador frontend
-
+<!--Repositorio iniciado para comenzar/seguir el aprendizaje de un desarrollador frontend
+-->
 
 
 <!-- Please update value in the {}  -->
@@ -30,7 +30,7 @@ Somos el grupo color *grape*. Autodenominados **MAJAC**.
 <!-- OVERVIEW -->
 
 ## Overview
-<!-->![screenshot](https://raw.githubusercontent.com/Aman-sgz/My-Team_Page/master/assets/my-team.png)
+<!--![screenshot](https://raw.githubusercontent.com/Aman-sgz/My-Team_Page/master/assets/my-team.png)-->
 - La idea fue crear un buscador de museos de la ciudad de buenos aires.
 - Link a la pagina web ya terminada [Buscador museos](https://jovial-heisenberg-707def.netlify.app/)
 - En este proyecto consumimos la API del gobierno https://www.cultura.gob.ar/api/v2.0/museos/ para crear una API propia en firebase.
@@ -39,7 +39,7 @@ Somos el grupo color *grape*. Autodenominados **MAJAC**.
 ### Built With
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 - [Sass](https://sass-lang.com/)
-- [JavaScript]
+- JavaScript
 - [Firebase](https://firebase.google.com/)
 
 
