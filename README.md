@@ -7,7 +7,7 @@
 
 
 <!-- Please update value in the {}  -->
-{<img src="./public/assets/logo.svg" align="right" height=80px />
+.<img src="./public/assets/logo.svg" align="right" height=80px />
 <h1 align="center"> Proyecto CMYK++ - Grape}</h1>
 
 
@@ -51,8 +51,11 @@ Somos el grupo color *grape*. Autodenominados **MAJAC**.
 - El buscador filtra los museos.
 - La información de cada museo es accedida con JavaScript consumiendo una API de firebase.
 
-![Cards and search](./public/demo/demo.gif)
+<!--![Cards and search](./public/demo/demo.gif) -->
 
+<p align="center">
+  <img  src="./public/demo/demo.gif">
+</p>
 
 ## Contact
 
