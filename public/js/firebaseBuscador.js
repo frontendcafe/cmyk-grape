@@ -38,6 +38,7 @@
 	  	
 	  }
 
+	  //BUSCADOR DESDE LA PAGINA INDEX
 	  function changeCards(){
 	  	isChanged=true;
 	  	limpiaCards(museumListRef);
@@ -71,7 +72,12 @@
 	  })
 	  	
 	  }
-	  
+
+	//BUSCADOR DESDE CUALQUIER OTRA PAGINA QUE NO SEA INDEX
+	function changeCardsOtherPage(){
+		let datoSearcho= document.getElementById("buscador").value;
+		location.href = "../../index.html?search="+datoSearcho;
+	}
 	  
 	let serach = document.getElementById("buscador");//lo escribi mal a proposito
 
