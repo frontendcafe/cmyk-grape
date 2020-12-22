@@ -9,6 +9,10 @@
     margin-bottom: 3em;
 }
 
+.card-body{
+    height: 11.5em;
+}
+
 .card-header {
     background-color: #AF2FEB;
     color: #FFF;

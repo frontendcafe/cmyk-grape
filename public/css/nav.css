@@ -2,6 +2,8 @@
 	border: none;
 }
 
+
+
 .navbar-toggler:focus {
 	outline: none;
 }
@@ -21,9 +23,11 @@
 	.navbar {
 		padding: .2em 4em .2em 4em;
 	}
-	
-	
 
+	.navbar-nav{
+		margin-left:12em;
+	}
+	
 	.nav-item {
 		margin: 1em;
 	}
@@ -33,7 +37,72 @@
 	}
 
 	.nav-link:hover {
-		background-color: #AF2FEB; /* no toma color de fuente */
+		color: #300f3f; /* no toma color de fuente */
 		cursor: pointer;
 	}
+}
+
+@media only screen and (min-width: 1024px){
+
+	.navbar-nav{
+		margin-left:13em;
+	}
+
+}
+
+
+@media only screen and (min-width: 1200px){
+
+	.navbar-nav{
+		margin-left:21em;
+	}
+
+}
+
+@media only screen and (min-width: 1300px){
+
+	.navbar-nav{
+		margin-left:25em;
+	}
+
+}
+
+@media only screen and (min-width: 1350px){
+
+	.navbar-nav{
+		margin-left:27.5em;
+	}
+
+}
+
+@media only screen and (min-width: 1400px){
+
+	.navbar-nav{
+		margin-left:30em;
+	}
+
+}
+
+@media only screen and (min-width: 1450px){
+
+	.navbar-nav{
+		margin-left:30em;
+	}
+
+}
+
+@media only screen and (min-width: 1700px){
+
+	.navbar-nav{
+		margin-left:36em;
+	}
+
+}
+
+@media only screen and (min-width: 1900px){
+
+	.navbar-nav{
+		margin-left:39em;
+	}
+
 }
