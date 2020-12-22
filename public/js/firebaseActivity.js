@@ -26,8 +26,7 @@
 	  		var data = childSnapshot.val();
 	  		//element.innerHTML = element.innerHTML+`<div>${data.name}</div>`;
 	  		var caracteristicaAbreviada= data.descripcion.substr(0,65);
-	  		var tituloAbreviado = data.name.substr(0,31);
-	  		var estadoDelMuseo = "CERRADO";	  		
+	  		var tituloAbreviado = data.name.substr(0,31);  		
 	  		if(data.name.length > 31){
 	  			tituloAbreviado = tituloAbreviado + "... Ver Mas"
 	  		}
@@ -44,7 +43,7 @@
 				  		<p class="museumNameText">${data.name}</p>
 				  		<img class="iconLocation" src="../assets/placeholder.svg">
 						<p class="location">${data.direccion}</p>
-						<button class="btn-accessMuseum text-uppercase">Ir al museo</button>
+						<a href="museum.html?id=${data.id}"><button class="btn-accessMuseum text-uppercase">Ir al museo</button></a>
 				  	</div>
 				
 				  	</div>  

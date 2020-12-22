@@ -2,6 +2,10 @@ body {
 	background-color: rgb(168, 17, 182);
 }
 
+.navbar-nav{
+	margin-left: 39em;
+}
+
 .container-activity {
 	padding: .5em 3em 3em 3em;
 }
