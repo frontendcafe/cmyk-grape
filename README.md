@@ -5,7 +5,7 @@
 
 <!-- Please update value in the {}  -->
 .<img src="./public/assets/logo.svg" align="right" height=80px />
-<h1 align="center"> Proyecto CMYK++ - Grape}</h1>
+<h1 align="center"> Proyecto CMYK++ - Grape</h1>
 
 
   Proyecto iniciado en [FrontEndCafe](https://frontend.cafe/) como parte de los proyectos CMYK, ahora ya en su segunda iteración tambien conocido como CMYK++.
