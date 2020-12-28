@@ -11,7 +11,7 @@ function creaCard(dato,museo_extra,elemID){
                                                         <p>${museo_extra._estadoDelMuseo}</p>
                                                     </div>
                                                     <a href="public/views/museum.html?id=${dato.id}">
-                                                    <img src="${dato.imagen}"
+                                                    <img class="img-card" src="${dato.imagen}"
                                                         class="card-img-top" alt="mueso3">
                                                     </a>
                                                     <div class="card-body">
