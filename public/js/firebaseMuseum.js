@@ -72,44 +72,46 @@
 		  
 			  <!-- Information -->
 			  <section class="container information mt-4 pb-5 d-lg-flex justify-content-lg-evenly">
+				<div class="col-lg-12">
 				<div class="row">
 				  <div class="col-md-12 col-lg-6">
 					<h2 class="title-information text-uppercase text-russian-violet font-weight-bold pt-5 mb-5">Información</h2>
-					<div class="d-flex">
+					<div class="">
 					  <i class="far fa-clock fa-lg text-right text-russian-violet"></i>
 					  <p class="information-item ml-3">${data.horarioApertura} - ${data.horarioCierre}</p>
 					</div>
 		  
-					<div class="d-flex">
+					<div class="">
 					  <i class="fas fa-map-marker-alt fa-lg text-right text-russian-violet"></i>
 					  <p class="information-item ml-3">${data.direccion}</p>
 					</div>
 		  
-					<div class="d-flex">
+					<div class="">
 					  <i class="fas fa-phone fa-lg text-right text-russian-violet"></i>
 					  <p class="information-item ml-2">${data.telefono}</p>
 					</div>  
 		  
-					<div class="d-flex">
+					<div class="">
 					  <i class="fas fa-envelope fa-lg text-right text-russian-violet"></i>
 					  <p class="information-item ml-2">${data.email}</p>
 					</div>
 				  </div>
 		  
-				  <div class="col-md-12 col-lg-6">
-					<h2 class="title-arrive text-uppercase text-russian-violet font-weight-bold mt-5 mb-5">Como llegar</h2>
-		 			<iframe 
-					  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.745920303114!2d-58.376985485194936!3d-34.610585865367746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad4630dbe7d%3A0xfe35dcab44070172!2sManzana%20de%20las%20Luces!5e0!3m2!1sen!2sar!4v1608000961286!5m2!1sen!2sar"
-					  width="300" height="300" frameborder="0" style="border:1px solid #d2bfdd;" allowfullscreen="" aria-hidden="false"
-					  tabindex="0"></iframe> 
+				  <div class="col-md-12 col-lg-6" class="contenedor-map justify-content-center">
+
+					<div id="showMap" class="map">
+					</div>
+
 				  </div>
+
+				</div>
 				</div>
 			  </section>
 				        </div>`
-                                                       
+            showGoogleMaps(data.latitud,data.longitud,data.name);                                             
 		}											
-
-	  		console.log(data.name);
+			
+	  		
 	  	 });
 	  })
 	  
