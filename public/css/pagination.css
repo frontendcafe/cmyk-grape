@@ -1,0 +1,23 @@
+.center-t{
+        justify-content: center;
+        display: flex;
+      }
+.center-p{
+        float: left;
+        text-decoration:none;
+        justify-content: center;
+        display: flex;
+        margin: 0.5rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        border-radius: 2px;
+        color: #525252;
+        background: #E4E4E4;
+}
+a.center-p{
+  text-decoration:none!important;
+}
+a.center-p:hover{
+  color: white;
+  background: #D133FC;
+  padding: 0.9rem 1.4rem 0.9rem 1.4rem;
+}
