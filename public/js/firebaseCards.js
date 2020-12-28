@@ -55,7 +55,10 @@ function changeCards(stringMuseo){
 	  	initial = parseInt(getInitial,10);
 	  }
 	  var finish = initial+2;
-	  museumListRef = database.ref("museum").orderByChild('id').startAt(initial).endAt(finish);
+	  var getMethodValue = getParameterByName("search");
+	  if(getMethodValue!=""){
+	  	museumListRef = database.ref("museum").orderByChild('id');
+	  }else{museumListRef = database.ref("museum").orderByChild('id').startAt(initial).endAt(finish)}
 	  let element = document.getElementById('elem');
 	  let isChanged=false;
 	  
@@ -82,6 +85,7 @@ function changeCards(stringMuseo){
 	  })
 	  }
 	}else{
+		
 		changeCards(getParameterByName("search"));
 	} 	  
 	  firebase.analytics();
