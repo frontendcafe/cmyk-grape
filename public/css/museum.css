@@ -65,6 +65,11 @@
     margin-left: -.5em;
 }
 
+.map{ 
+      background-color: red;
+      width: 100%;
+      height: 33rem;
+    }
 .subtitle-activities {
     font-family: 'Russo One', sans-serif;
     font-size: 1rem;
