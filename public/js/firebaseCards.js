@@ -1,9 +1,3 @@
-function getParameterByName(name) {
-	name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-	var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-	 results = regex.exec(location.search);
-	 return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
 //BUSQUEDA DESDE EL INDEX CUANDO ES REDIRECCIONADO
 function changeCards(stringMuseo){
 	 isChanged=true;
@@ -52,12 +46,16 @@ function changeCards(stringMuseo){
 	    appId: "1:743873845303:web:c81963edce2b4a5747c7b2",
 	    measurementId: "G-44EZY21CCN"
 	  };
-	  // Initialize Firebase
-	  firebase.initializeApp(firebaseConfig);
 	  var database = firebase.database();
-
-	  museumListRef = database.ref("museum");
-
+	  var initial;
+	  getInitial = getParameterByName("searchInitial");
+	  if(getInitial==""){
+	  	initial = 1;
+	  }else{
+	  	initial = parseInt(getInitial,10);
+	  }
+	  var finish = initial+2;
+	  museumListRef = database.ref("museum").orderByChild('id').startAt(initial).endAt(finish);
 	  let element = document.getElementById('elem');
 	  let isChanged=false;
 	  
