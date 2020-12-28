@@ -76,22 +76,22 @@
 				<div class="row">
 				  <div class="col-md-12 col-lg-6">
 					<h2 class="title-information text-uppercase text-russian-violet font-weight-bold pt-5 mb-5">Información</h2>
-					<div class="">
+					<div class="d-flex">
 					  <i class="far fa-clock fa-lg text-right text-russian-violet"></i>
 					  <p class="information-item ml-3">${data.horarioApertura} - ${data.horarioCierre}</p>
 					</div>
 		  
-					<div class="">
+					<div class="d-flex">
 					  <i class="fas fa-map-marker-alt fa-lg text-right text-russian-violet"></i>
 					  <p class="information-item ml-3">${data.direccion}</p>
 					</div>
 		  
-					<div class="">
+					<div class="d-flex">
 					  <i class="fas fa-phone fa-lg text-right text-russian-violet"></i>
 					  <p class="information-item ml-2">${data.telefono}</p>
 					</div>  
 		  
-					<div class="">
+					<div class="d-flex">
 					  <i class="fas fa-envelope fa-lg text-right text-russian-violet"></i>
 					  <p class="information-item ml-2">${data.email}</p>
 					</div>
