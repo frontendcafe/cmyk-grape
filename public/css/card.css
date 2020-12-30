@@ -1,7 +1,16 @@
 .img-card{
     width: 100%;
     height: 15.5rem;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
+.img-card:hover{
+	width: 100%;
+	height: 15.5rem;
+	-webkit-transform: scale(1.04);
+	transform: scale(1.04);
+}
+
 .container-card {
     padding: 3em 1em 3em 1em;
 }
