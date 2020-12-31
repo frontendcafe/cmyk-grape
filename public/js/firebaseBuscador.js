@@ -1,8 +1,8 @@
 	
 	
 	  museumListRef = database.ref("museum");
-	  
 	  function changeCardsInMuseo(){
+	    console.log("ASDASDASDASDASDASDASDASD");
 		let datoSearcho= document.getElementById("buscador").value;
 		window.location='../../index.html';
 	  	isChanged=true;
@@ -40,6 +40,13 @@
 
 	  //BUSCADOR DESDE LA PAGINA INDEX
 	  function changeCards(){
+	  	FlagPagination = false;
+	  	let datoSearcho= document.getElementById("buscador").value
+	  	let datoPaginacion= document.getElementById('paginacion');
+	  	datoPaginacion.innerHTML = "";
+	  	if(datoSearcho.length==0){
+	  		return null;
+	  	}
 	  	isChanged=true;
 	  	limpiaCards(museumListRef);
 	  	
@@ -54,7 +61,7 @@
 	  		
 	  		
 	  		
-	  		let datoSearcho= document.getElementById("buscador").value;
+	  		;
 	  		
 			let regexSearcho= RegExp(datoSearcho,"i");
 			console.log(datoSearcho);

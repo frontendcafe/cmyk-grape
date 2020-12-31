@@ -9,13 +9,27 @@
     }
   }
  }
- var count = 0;
-      var database = firebase.database();
-      museumListRef = database.ref("museum");
-      museumListRef.on("value", function (snapshot) {
-        snapshot.forEach(function (childSnapshot) {
-            var data = childSnapshot.val();
-            count++;
-         });
-      pagination(count)})
-      
+ function count(){
+  var count = 0;
+  var database = firebase.database();
+  museumListRef = database.ref("museum");
+  museumListRef.on("value", function (snapshot) {
+    snapshot.forEach(function (childSnapshot) {
+        var data = childSnapshot.val();
+        count++;
+      });
+    return count})
+ }
+ 
+function countPagination(){
+  var count = 0;
+  var database = firebase.database();
+  museumListRef = database.ref("museum");
+  museumListRef.on("value", function (snapshot) {
+    snapshot.forEach(function (childSnapshot) {
+        var data = childSnapshot.val();
+        count++;
+      });
+    pagination(count)})
+ }
+ countPagination();      
