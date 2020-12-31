@@ -2,7 +2,6 @@
 	
 	  museumListRef = database.ref("museum");
 	  function changeCardsInMuseo(){
-	    console.log("ASDASDASDASDASDASDASDASD");
 		let datoSearcho= document.getElementById("buscador").value;
 		window.location='../../index.html';
 	  	isChanged=true;
