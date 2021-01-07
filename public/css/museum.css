@@ -55,7 +55,7 @@
 /* Activities 
 ----------------------------------------------------------------------------*/
 .activities {
-    background-color: #b41ce2;
+    background-color: #32074b;
 }
 
 .title-activities {
@@ -141,7 +141,7 @@ iframe {
 
     .title-museum{
         font-size: 2.5rem;
-        font-weight: bolder;
+        /* font-weight: bolder; */
     }
 
     .title-activities {
