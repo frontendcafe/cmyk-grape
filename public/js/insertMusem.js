@@ -18,6 +18,9 @@
         muestras: document.getElementById('muestras').value,
         name: document.getElementById('name').value,
         provincia: document.getElementById('provincia').value,
-        telefono: document.getElementById('telefono').value
+        telefono: document.getElementById('telefono').value,
+        latitud: document.getElementById('coordenada-x').value,
+        longitud:document.getElementById('coordenada-y').value,
+        status: true
 	  })
 	}
