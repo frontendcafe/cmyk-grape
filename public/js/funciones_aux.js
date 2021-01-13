@@ -3,6 +3,9 @@ function creaCard(dato,museo_extra,elemID){
 	if(dato.name > 31){
 	  	museo_extra._tituloAbreviado = museo_extra._tituloAbreviado + "... Ver Mas"
 	}
+	if(dato.status==false){
+		return false;
+	}
 	 //caracteristicaAbreviada = caracteristicaAbreviada
 	 element.innerHTML =element.innerHTML+ `
 											<div class="col-lg-4" id="carta">

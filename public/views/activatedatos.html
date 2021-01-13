@@ -9,11 +9,6 @@
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon"sizes="196x196" href="../assets/logo.svg">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
      <!-- Icons -->
   <script src="https://kit.fontawesome.com/3620d7f712.js" crossorigin="anonymous"></script>
 </head>
@@ -72,37 +67,8 @@
 				<input id="ButtoncloseSesion" class="formInsertsubmit btnoption"type="submit" value="CERRAR SESION" name="" id="enviar">
 			</section>
 			<section class="col-lg-9 col-sm-12 ">
-				<div class="col-lg-12 col-sm-12">
-					<form>
-						<div class="row"  class="form-group">
-							<div class="col-lg-6 col-sm-12">
-								<textarea class="formInserttextArea form-control styleinput" type="text" name="" placeholder="descripcion" id="descripcion" required></textarea>
-								<input class="formInsertlbl form-control styleinput" type="text" name="" placeholder="direccion" id="direccion" required>
-								<input class="formInsertlbl form-control styleinput" type="email" name="" placeholder="email" id="email" required>
-								<input class="formInsertlbl form-control styleinput" type="text" name="" placeholder="exposicion fija" id="exposicion_fija" required>
-								<input class="formInsertlbl form-control styleinput" type="text" name="" placeholder="exposicion transitoria" id="exposicion_transitoria" required>
-								<input class="formInsertlbl form-control styleinput" type="" name="" placeholder="horario apertura" id="horario_apertura" required>
-								<input class="formInsertlbl form-control styleinput" type="" name="" placeholder="horario cierre" id="horario_cierre" required>
-								<input class="formInsertlbl form-control styleinput" type="" name="" placeholder="latitud" id="latitud" required>
-								<input class="formInsertlbl form-control styleinput" type="" name="" placeholder="longitud" id="longitud" required>
-								
-							</div>
-							<div class="col-lg-6 col-sm-12">
-								<input class="formInsertlbl form-control styleinput" type="number" name="" placeholder="id" id="id" required>
-								<input class="formInsertlbl form-control styleinput" type="text" name="" placeholder="imagen" id="imagen" required>
-								<input class="formInsertlbl form-control styleinput" type="text" name="" placeholder="img exposicion fija" id="img_exposicion_fija" required>
-								<input class="formInsertlbl form-control styleinput" type="text" name="" placeholder="img exposicion transitoria" id="img_exposicion_transitoria" required>
-								<input class="formInsertlbl form-control styleinput " type="text" name="" placeholder="muestras" id="muestras" required>
-								<input class="formInsertlbl form-control styleinput " type="text" name="" placeholder="name" id="name" required>
-								<input class="formInsertlbl form-control styleinput" type="text" name="" placeholder="provincia" id="provincia" required>
-								<input class="formInsertlbl form-control styleinput" type="text" name="" placeholder="telefono" id="telefono" required>
-								
-							</div>
-							<div class="col-lg-12">
-								<input class="formInsertsubmit btnsubmit"type="submit" name="" id="enviar" onClick="writeUserData();">
-							</div>
-						</div>	
-					</form>
+				<div id="body" class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+					
 				</div>
 			</section>
 		</div>
@@ -126,6 +92,26 @@
 
 
 	<style type="text/css">
+		.text-align-center{
+			text-align: center;
+		}
+		.celdaInfoColorOne{
+			border: 1px solid #ff4b40!important;
+			background: #fa9f9a!important;
+		}
+		.celdaInfoColorTwo{
+			padding: 0.1rem;
+			border: 1px solid #01a2a7!important;
+			background: #81e2e5;
+		}
+		.celdaInfoColorTwo button{
+			height: 100%;
+			width: 100%;
+			color: white;
+			background: #ff4b40!important;
+			border:none;
+			border-radius: 5px;
+		}
 		a:hover{
 			text-decoration:none;
 		}
@@ -142,7 +128,7 @@
 			background: #ff4b40!important;
 		}
 		.btnsubmit{
-			width: 90%!important;
+			width: 100%!important;
 			background: #ff4b40!important;
 			border-color: #ff4b40!important;
 			outline: none!important;
@@ -249,7 +235,7 @@
   <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
 
   <script src="../js/connectionDataBaseFirebase.js"></script>
-  <script src="../js/insertMusem.js"></script>
+  <script src="../js/activateMuseum.js"></script>
   <script src="../js/closeSesion.js"></script>
 
 </body>
