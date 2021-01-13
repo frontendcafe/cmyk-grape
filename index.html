@@ -15,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="./public/css/hero.css">
   <link rel="stylesheet" type="text/css" href="./public/css/card.css">
   <link rel="stylesheet" type="text/css" href="./public/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="./public/css/pagination.css">
 
   <link rel="stylesheet" href="./public/css/backtotop.css">
   <link rel="stylesheet" type="text/css" href="./public/css/loader.css">
@@ -81,7 +82,7 @@
       <h1 class="col-lg-12 text-center font-weight-bold text-uppercase">Museos de Buenos Aires</h1>
 
       <div class="col-lg-12 input-group">
-        <input type="text" class="search form-control" id="buscador" onSubmit="changeCards();" placeholder="Busca un museo para visitar"
+        <input type="text" oninput="searchSensitive(this.value)" class="search form-control" id="buscador" onSubmit="changeCards();" placeholder="Busca un museo para visitar"
           aria-label="nombre-museo" aria-describedby="button-addon2">
         <button class="btn btn-secondary" type="button" id="button-addon2" onClick="changeCards();"><svg width="1em" height="1em"
             viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -98,6 +99,12 @@
     <div class="container-card">
       <div class="card-deck row" id="elem">
       </div>
+      <div class="paginacion col-lg-12" >
+        <div class="center-t" id="paginacion">
+          
+        </div>
+      </div>
+
     </div>
 
     <!-- Back to top button -->
@@ -112,6 +119,7 @@
           <li class="list-inline-item text-dark-violet"><i class="fab fa-facebook fa-lg"></i></li>
           <li class="list-inline-item text-dark-violet"><i class="fab fa-twitter fa-lg"></i></li>
           <li class="list-inline-item text-dark-violet"><i class="fab fa-instagram fa-lg"></i></li>
+          <li class="list-inline-item text-dark-violet"><a class="text-dark-violet" target="_blank" href="https://github.com/frontendcafe/cmyk-grape"><i class="fab fa-github fa-lg"></i></a></li>
         </ul>
       </div>
 
@@ -138,11 +146,20 @@
 
     
 
-
+ 
   <!-- SCRIPTS -->
+  <script src="./public/js/connectionDataBaseFirebase.js"></script>
+  <script src="./public/js/functionMethodGet.js"></script>
   <script src="./public/js/funciones_aux.js"></script>
+  <script src="./public/js/countElementFirebase.js"></script>
   <script src="./public/js/firebaseCards.js"></script>
   <script src="./public/js/firebaseBuscador.js"></script>
   <script src="./public/js/backtotop.js"></script>
+   <script type="text/javascript">
+    function searchSensitive(value){
+      changeCards();
+
+     }
+  </script>
     
 </body>

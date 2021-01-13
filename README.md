@@ -4,8 +4,8 @@
 
 
 <!-- Please update value in the {}  -->
-.<img src="./public/assets/logo.svg" align="right" height=80px />
-<h1 align="center"> Proyecto CMYK++ - Grape}</h1>
+<img src="./public/assets/logo.svg" align="right" height=80px />
+<h1 align="center"> Proyecto CMYK++ - Grape</h1>
 
 
   Proyecto iniciado en [FrontEndCafe](https://frontend.cafe/) como parte de los proyectos CMYK, ahora ya en su segunda iteración tambien conocido como CMYK++.
@@ -29,7 +29,7 @@ Somos el grupo color *grape*. Autodenominados **MAJAC**.
 ## Overview
 <!--![screenshot](https://raw.githubusercontent.com/Aman-sgz/My-Team_Page/master/assets/my-team.png)-->
 - La idea fue crear un buscador de museos de la ciudad de buenos aires.
-- Link a la pagina web ya terminada [Buscador museos](https://jovial-heisenberg-707def.netlify.app/)
+- Link a la pagina web ya terminada [https://majac.netlify.app/]()
 - En este proyecto consumimos la API del gobierno https://www.cultura.gob.ar/api/v2.0/museos/ para crear una API propia en firebase.
 
 
